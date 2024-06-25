@@ -168,7 +168,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 80%;
-    width: 400px; /* Largura máxima do conteúdo */
+    width: 400px; /* Largura padrão do conteúdo */
     max-height: 80%; /* Altura máxima do conteúdo */
     overflow-y: auto; /* Adicionado para rolagem em conteúdos longos */
 }
@@ -185,6 +185,7 @@ footer {
 @media (max-width: 768px) {
     .help-content {
         max-width: 90%; /* Ajuste para telas menores */
-        width: auto;
+        width: 90%; /* Ajuste para telas menores */
+        max-height: 90%; /* Ajuste para telas menores */
     }
 }
