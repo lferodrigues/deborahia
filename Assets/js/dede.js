@@ -1,6 +1,6 @@
 var prompts = {
             'Vendas': [
-                  "Crie um texto de vendas para \"{tema}\" destacando os benefícios exclusivos e apelos emocionais.",
+    "Crie um texto de vendas para o seguinte tema:\"{tema}\". Inclua detalhes sobre os benefícios, características do produto/serviço e um call-to-action claro.",
     "Elabore uma estratégia de vendas para \"{tema}\" que inclua gatilhos mentais e técnicas persuasivas.",
     "Desenvolva um script de vendas para \"{tema}\" focado em resolver as dores específicas do cliente.",
     "Crie uma oferta irresistível para \"{tema}\" que destaque o valor agregado do produto ou serviço.",
