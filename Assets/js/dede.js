@@ -172,7 +172,7 @@ var prompts = {
         "Elabore um texto de vendas que use uma abordagem de storytelling para \"{tema}\". Conte a jornada de um cliente que experimentou sucesso usando o produto/serviço.",
         "Crie um texto de vendas que destaque os benefícios de longo prazo de \"{tema}\". Explique como o investimento hoje resultará em economias futuras.",
         "Produza um texto de vendas que enfatize a sustentabilidade de \"{tema}\". Mostre como o produto/serviço promove práticas ambientalmente responsáveis.",
-        "Desenvolva um texto de vendas que use uma abordagem de "faça você mesmo" para \"{tema}\". Demonstre como os clientes podem usar o produto/serviço de forma autônoma.",
+        "Desenvolva um texto de vendas que use uma abordagem de faça voce mesmo para \"{tema}\". Demonstre como os clientes podem usar o produto/serviço de forma autônoma.",
         "Elabore um texto de vendas que apresente \"{tema}\" como uma solução que economiza espaço. Enfatize como o produto/serviço é compacto e eficiente em termos de espaço.",
         "Crie um texto de vendas que use uma abordagem de dicas e truques para \"{tema}\". Ofereça insights práticos sobre como maximizar o uso do produto/serviço.",
         "Produza um texto de vendas que destaque a inovação de \"{tema}\". Explique como o produto/serviço incorpora tecnologias avançadas para melhorar a experiência do cliente.",
