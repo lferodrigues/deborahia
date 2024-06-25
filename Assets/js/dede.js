@@ -227,41 +227,48 @@ var prompts = {
         var currentTopic = '';
         var currentIndex = 0;
 
-        function enviarNecessidade() {
-            var tema = document.getElementById('userInput').value.trim();
-            var topico = document.getElementById('topicSelect').value;
-
-            if (tema !== '') {
-                currentTopic = topico;
-                currentIndex = 0;
-                exibirResposta();
-                atualizarBotoesNavegacao();
+        document.getElementById('topicSelect').addEventListener('change', function() {
+            currentTopic = this.value;
+            if (prompts[currentTopic] && prompts[currentTopic].length > 0) {
+                document.getElementById('respostaContainer').innerHTML = "";
             } else {
-                alert('Por favor, digite o tema antes de enviar.');
+                document.getElementById('respostaContainer').innerHTML = "";
+            }
+        });
+    
+        document.getElementById('enviarBtn').addEventListener('click', function() {
+            enviarNecessidade();
+        });
+    
+        function enviarNecessidade() {
+            if (currentTopic && document.getElementById('userInput').value.trim() !== "") {
+                exibirResposta();
+            } else {
+                alert("Por favor, selecione um tópico e digite o tema.");
             }
         }
-
+    
         function exibirResposta() {
+            var tema = document.getElementById('userInput').value.trim();
+            var respostas = prompts[currentTopic];
+            var respostaAleatoria = respostas[Math.floor(Math.random() * respostas.length)].replace("{tema}", tema);
+    
             var respostaContainer = document.getElementById('respostaContainer');
             respostaContainer.innerHTML = '';
-
-            var resposta = prompts[currentTopic][currentIndex].replace("{tema}", document.getElementById('userInput').value.trim());
-
-            var respostaDiv = document.createElement('div');
-            respostaDiv.id = 'resposta';
-            respostaDiv.textContent = resposta;
-            respostaContainer.appendChild(respostaDiv);
-
+    
+            var respostaElemento = document.createElement('div');
+            respostaElemento.id = 'resposta';
+            respostaElemento.textContent = respostaAleatoria;
+            respostaContainer.appendChild(respostaElemento);
+    
             var navButtons = document.createElement('div');
             navButtons.className = 'nav-buttons';
-
             var btnVoltar = document.createElement('button');
             btnVoltar.id = 'btnVoltar';
             btnVoltar.textContent = 'Voltar';
-            btnVoltar.onclick = respostaAnterior;
-            btnVoltar.disabled = true;
+            btnVoltar.onclick = exibirResposta; // Troca para exibir nova resposta aleatória
             navButtons.appendChild(btnVoltar);
-
+    
             var btnCopiar = document.createElement('button');
             btnCopiar.className = 'copy-button';
             btnCopiar.onclick = copiarResposta;
@@ -270,52 +277,28 @@ var prompts = {
             copyIcon.innerHTML = '📋';
             btnCopiar.appendChild(copyIcon);
             navButtons.appendChild(btnCopiar);
-
             var btnAvancar = document.createElement('button');
             btnAvancar.id = 'btnAvancar';
             btnAvancar.textContent = 'Avançar';
-            btnAvancar.onclick = proximaResposta;
+            btnAvancar.onclick = exibirResposta; // Troca para exibir nova resposta aleatória
             navButtons.appendChild(btnAvancar);
 
+    
             respostaContainer.appendChild(navButtons);
         }
-
+    
         function copiarResposta() {
-            var resposta = prompts[currentTopic][currentIndex].replace("{tema}", document.getElementById('userInput').value.trim());
-
+            var resposta = document.getElementById('resposta').textContent;
+    
             var textarea = document.createElement('textarea');
             textarea.value = resposta;
             document.body.appendChild(textarea);
             textarea.select();
             document.execCommand('copy');
             document.body.removeChild(textarea);
-
+    
             alert('Resposta copiada para a área de transferência!');
         }
 
-        function proximaResposta() {
-            if (currentIndex < prompts[currentTopic].length - 1) {
-                currentIndex++;
-                exibirResposta();
-                atualizarBotoesNavegacao();
-            }
-        }
-
-        function respostaAnterior() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                exibirResposta();
-                atualizarBotoesNavegacao();
-            }
-        }
-
-        function atualizarBotoesNavegacao() {
-            var btnVoltar = document.getElementById('btnVoltar');
-            var btnAvancar = document.getElementById('btnAvancar');
-
-            btnVoltar.disabled = currentIndex === 0;
-            btnAvancar.disabled = currentIndex === prompts[currentTopic].length - 1;
-        };
-
 // Atualiza o ano no rodapé
-document.getElementById('currentYear').textContent = new Date().getFullYear();
+

@@ -3,142 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/template.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Dedé.I.A - A sua geradora de prompts virtuais</title>
-    <style>
-      body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; <-- cor do fundo do sistema-->
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 90%;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-        }
-
-        #resposta {
-            background-color: #e9ecef;
-            padding: 10px;
-            border-radius: 4px;
-            margin-top: 20px;
-            text-align: left;
-            white-space: pre-wrap;
-            position: relative;
-        }
-
-        .copy-button {
-            background-color: #28a745;
-            border: none;
-            color: white;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 50%;
-            margin-top: 10px;
-            margin-right: 5px;
-        }
-
-        .copy-button:hover {
-            background-color: #218838;
-        }
-
-        .copy-icon {
-            font-size: 16px;
-            vertical-align: middle;
-        }
-
-        .nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-
-        footer {
-              background-color: #000;
-              color: #fff;
-              text-align: center;
-              position: fixed;
-              bottom: 0;
-              width: 100%;
-			  height:8%
-          }
-
-          .footer-content {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #fff;
-          }
-
-          .footer-content img {
-              width: 90px;
-              margin-right: 10px;
-          }
-          .pre-nav-image {
-              display: block;
-              margin: 0 auto;
-              max-width: 320px;
-              height: auto;
-          }
-          .progress {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              font-size: 24px;
-          }
-          .content {
-              text-align: center;
-              margin-top: 50px;
-          }
-
-          .construction {
-              position: relative;
-          }
-
-          .construction img {
-              width: 100px;
-          }
-    </style>
+    <title>Deborah I.A - A sua geradora de prompts virtuais</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Dedé.I.A - A sua geradora de prompts virtuais</h1>
+        <div style="text-align: center; margin-bottom: 10px;">
+            <img src="./Assets/img/dede.png" alt="Logo" style="width: 130px; height: 125px;">
+        </div>
         <p>Selecione o tópico e digite o tema:</p>
         <select id="topicSelect">
+            <option value="">Selecione o tópico do seu prompt...</option>
             <option value="Vendas">Vendas</option>
             <option value="Divulgação">Divulgação</option>
             <option value="Post para Instagram">Post para Instagram</option>
@@ -151,18 +28,50 @@
         </select>
         <textarea id="userInput" rows="4" cols="50" placeholder="Digite o tema aqui..."></textarea>
         <br>
-        <button onclick="enviarNecessidade()">Enviar</button>
-        <div id="respostaContainer"></div>
+        <button onclick="enviarNecessidade()">Gerar</button>
+        <div id="respostaContainer">
+            
+        </div>
     </div>
-	<div>
-	</div>
+     <!-- Botão de Ajuda -->
+     <div id="helpButton" class="help-button">
+        <i class="fas fa-question-circle"></i>
+    </div>
+    
+    <!-- Tela de Ajuda -->
+    <div id="helpModal" class="help-modal">
+        <div class="help-content">
+            <span class="close-button" onclick="fecharAjuda()">&times;</span>
+            <h2>Sobre o Projeto Deborah I.A</h2>
+            <p>O projeto Deborah I.A foi criado com o objetivo de facilitar a geração de prompts para uso em inteligências artificiais generalistas, como ChatGPT, Copilot, entre outros.</p>
+            <p>Para utilizar o sistema, siga os passos abaixo:</p>
+            <ol>
+                <li>Escreva a demanda desejada no campo de texto.</li>
+                <li>Selecione o tópico relevante para a sua demanda no menu suspenso.</li>
+                <li>Clique no botão "Gerar". O sistema irá criar um prompt adequado para a inteligência artificial selecionada.</li>
+                <li>Para copiar o prompt gerado, clique no ícone 📋 ao lado do prompt. O conteúdo será automaticamente copiado para a sua área de transferência.</li>
+                <li>Utilize os botões de avançar e voltar para navegar entre diferentes versões do prompt gerado, se disponíveis.</li>
+            </ol>
+            <p>Experimente agora mesmo e simplifique a criação de conteúdos com inteligência artificial!</p>
+        </div>
+    </div>
+    
+</div>
+
+    
     <footer>
+        
        <div class="footer-content">
            <a href="https://feliperodrigues.net"><img
                    src="./Assets/img/banner04.png" alt="Logo da Zapher Security"></a>
            <p>© <span id="currentYear"></span> Todos os direitos reservados</p>
        </div>
+       <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+       </script>
 
 <script src="./Assets/js/dede.js"></script>
+<script src="./Assets/js/help.js"></script>
 </body>
 </html>
