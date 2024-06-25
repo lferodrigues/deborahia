@@ -181,6 +181,10 @@ footer {
     cursor: pointer;
 }
 
+.adsense-container {
+    margin-top: 20px; /* Espaçamento superior para separar do conteúdo */
+}
+
 /* Estilos adicionais para tornar responsivo */
 @media (max-width: 768px) {
     .help-content {
