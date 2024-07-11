@@ -189,10 +189,13 @@ var prompts = {
         "Crie um texto de vendas que use uma abordagem de reconhecimento de necessidades para \"{tema}\". Identifique os problemas específicos que o produto/serviço resolve para os clientes.",
         "Produza um texto de vendas que enfatize a acessibilidade de \"{tema}\". Destaque como o produto/serviço é fácil de usar e acessível para todos os públicos.",
         "Desenvolva um texto de vendas que use uma abordagem de avaliação gratuita para \"{tema}\". Ofereça uma amostra grátis ou uma avaliação inicial sem compromisso.",
-        "Elabore um texto de vendas que apresente \"{tema}\" como uma solução que promove a liberdade. Enfatize como o produto/serviço oferece escolhas e opções aos clientes."
+        "Elabore um texto de vendas que apresente \"{tema}\" como uma solução que promove a liberdade. Enfatize como o produto/serviço oferece escolhas e opções aos clientes.",
+                           
+                        
             ],
   'Divulgação': [
-    "Crie um texto de divulgação para o tema \"{tema}\". Inclua uma descrição atrativa, público-alvo e métodos de distribuição.",
+        "Você será um especialista em Gestão de Mídias Sociais e irá criar um calendário de posts, sendo cada post com até 200 palavras, sobre uma \"{tema}\" incluindo todos os produtos e serviços possíveis, ressaltando os beneficios de comprar em tom alegre, com gatilhos mentais, chamadas para ação e hashtags para o Instagram. Use datas comerciais e separe nos 12 meses do ano.",          
+        "Crie um texto de divulgação para o tema \"{tema}\". Inclua uma descrição atrativa, público-alvo e métodos de distribuição.",
         "Elabore uma campanha de divulgação para promover \"{tema}\". Descreva os canais de comunicação, estratégias de engajamento e a mensagem principal.",
         "Desenvolva um plano de divulgação detalhado para o lançamento de \"{tema}\". Considere cronograma, recursos necessários e métricas de sucesso.",
         "Escreva um press release anunciando \"{tema}\". Destaque os benefícios, diferenciais e impacto esperado.",
@@ -320,9 +323,11 @@ var prompts = {
         "Elabore um plano de lançamento de produto para \"{tema}\". Inclua pesquisa de mercado, desenvolvimento de produto e estratégias de marketing.",
         "Desenvolva uma estratégia de marketing de influência para \"{tema}\". Identifique influenciadores-chave, estratégias de colaboração e métricas de desempenho.",
         "Escreva um artigo de blog sobre \"{tema}\". Aborde tendências de mercado, melhores práticas e insights estratégicos.",
-        "Descreva como usar storytelling para promover \"{tema}\". Inclua personagens, narrativa e emocionalidade vinculados ao tema."
+        "Descreva como usar storytelling para promover \"{tema}\". Inclua personagens, narrativa e emocionalidade vinculados ao tema.",
+             
 ],
      'Post para Instagram': [
+            "Crie 10 conteúdos para post em Instagram, considerando regras de SEO e Click Bait, com títulos para cada pergunta mais pesquisada sobre\"{tema}\" no Google e o conteúdo cativante com pelo menos 500 caracteres em cada post", 
                 "Crie um post para Instagram sobre \"{tema}\" que inspire e motive os seguidores.",
                 "Elabore um conteúdo educativo para Instagram sobre \"{tema}\" que ofereça dicas práticas.",
                 "Desenvolva um post promocional para Instagram sobre \"{tema}\" que destaque os benefícios exclusivos.",
