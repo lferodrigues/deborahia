@@ -54,7 +54,7 @@ select {
 }
 
 .copy-button {
-    background-color: transparent ;
+    background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
@@ -65,7 +65,7 @@ select {
 }
 
 .copy-button:hover {
-    background-color: transparent ;
+    background-color: transparent;
 }
 
 .copy-icon {
@@ -80,52 +80,56 @@ select {
 }
 
 footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height:8%
-  }
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+}
 
-  .footer-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-  }
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
 
-  .footer-content img {
-      width: 90px;
-      margin-right: 10px;
-  }
-  .pre-nav-image {
-      display: block;
-      margin: 0 auto;
-      max-width: 320px;
-      height: auto;
-  }
-  .progress {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 24px;
-  }
-  .content {
-      text-align: center;
-      margin-top: 50px;
-  }
+.footer-content img {
+    width: 90px;
+    margin-right: 10px;
+}
 
-  .construction {
-      position: relative;
-  }
+.pre-nav-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    height: auto;
+}
 
-  .construction img {
-      width: 100px;
-  }
-  .help-button {
+.progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.construction {
+    position: relative;
+}
+
+.construction img {
+    width: 100px;
+}
+
+.help-button {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -145,7 +149,7 @@ footer {
     font-size: 24px;
 }
 
- /* Estilos para o modal responsivo */
+/* Estilos para o modal responsivo */
 .help-modal {
     display: none;
     position: fixed;
@@ -192,4 +196,26 @@ footer {
         width: 90%; /* Ajuste para telas menores */
         max-height: 90%; /* Ajuste para telas menores */
     }
+}
+
+/* Estilo dos ícones sociais */
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.social-icons i {
+    font-size: 1.2rem; /* Tamanho reduzido */
 }
