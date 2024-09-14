@@ -202,7 +202,7 @@ footer {
     display: flex; /* Colocar o texto e os ícones na mesma linha */
     align-items: center; /* Alinhar verticalmente os itens no centro */
     position: absolute; /* Posicionar em relação ao conteúdo da página */
-    bottom: 80px; /* Ficar antes do footer */
+    bottom: 40px; /* Ficar antes do footer */
     right: 15px; /* Alinhar à direita */
     z-index: 999; /* Manter acima de outros elementos */
 }
