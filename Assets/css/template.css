@@ -196,35 +196,47 @@ footer {
     }
 }
 
+
+/* Container das redes sociais */
+.social-container {
+    display: flex; /* Colocar o texto e os ícones na mesma linha */
+    align-items: center; /* Alinhar verticalmente os itens no centro */
+    position: absolute; /* Posicionar em relação ao conteúdo da página */
+    bottom: 80px; /* Ficar antes do footer */
+    right: 15px; /* Alinhar à direita */
+    z-index: 999; /* Manter acima de outros elementos */
+}
+
+/* Texto da frase */
+.social-text {
+    color: white; /* Cor do texto em branco */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-right: 10px; /* Espaço entre o texto e os ícones */
+}
+
 /* Estilo dos ícones sociais */
+.social-icons {
+    display: flex; /* Manter os ícones em linha */
+    gap: 4px; /* Espaçamento entre os ícones */
+}
+
 .social-icons a {
-    margin-bottom: 20px;
     color: white; /* Ícones brancos */
-    background-color: #007bff; /* Fundo azul ao redor dos ícones */
-    border-radius: 50%; /* Arredondar completamente */
-    padding: 2px; /* Reduzir ainda mais o espaçamento entre o ícone e o fundo azul */
+    border-radius: 50%; /* Ícones arredondados */
+    padding: 2px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px; /* Diminuir ainda mais o tamanho total */
+    width: 30px;
     height: 30px;
+    outline: none; /* Remover contorno azul */
 }
 
 .social-icons a i {
-    font-size: 1.3rem; /* Aumentar um pouco mais o tamanho do ícone */
+    font-size: 1.3rem; /* Tamanho dos ícones */
 }
 
 .social-icons a:hover {
-    background-color: #0056b3; /* Fundo azul mais escuro ao passar o mouse */
     color: white; /* Cor dos ícones no hover */
-}
-
-.social-icons {
-    position: fixed; /* Fixar no canto inferior direito */
-    bottom: 60px; /* Antes do footer */
-    right: 15px;
-    z-index: 1000; /* Manter à frente de outros elementos */
-    display: flex;
-    gap: 8px; /* Espaçamento entre os ícones */
 }
