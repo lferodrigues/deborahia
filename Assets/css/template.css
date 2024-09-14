@@ -202,7 +202,7 @@ footer {
     display: flex; /* Colocar o texto e os ícones na mesma linha */
     align-items: center; /* Alinhar verticalmente os itens no centro */
     position: absolute; /* Posicionar em relação ao conteúdo da página */
-    bottom: 80px; /* Ficar antes do footer */
+    bottom: 40px; /* Ficar antes do footer */
     right: 15px; /* Alinhar à direita */
     z-index: 999; /* Manter acima de outros elementos */
 }
@@ -211,19 +211,19 @@ footer {
 .social-text {
     color: white; /* Cor do texto em branco */
     font-size: 1rem; /* Tamanho da fonte */
-    margin-right: 10px; /* Espaço entre o texto e os ícones */
+    margin-right: 1px; /* Espaço entre o texto e os ícones */
 }
 
 /* Estilo dos ícones sociais */
 .social-icons {
     display: flex; /* Manter os ícones em linha */
-    gap: 4px; /* Espaçamento entre os ícones */
+    gap: 1px; /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
     color: white; /* Ícones brancos */
-    border-radius: 50%; /* Ícones arredondados */
-    padding: 2px;
+    border-radius: 20%; /* Ícones arredondados */
+    padding: 1px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -234,7 +234,7 @@ footer {
 }
 
 .social-icons a i {
-    font-size: 1.3rem; /* Tamanho dos ícones */
+    font-size: 1.4rem; /* Tamanho dos ícones */
 }
 
 .social-icons a:hover {
