@@ -722,6 +722,9 @@ var prompts = {
                 "Elabore um código de análise de dados em \"{tema}\" que manipule grandes conjuntos de dados de forma eficiente.",
                 "Desenvolva um algoritmo de aprendizado de máquina em \"{tema}\" que realize previsões e análises preditivas.",
                 "Crie um código de interface de usuário em \"{tema}\" que seja intuitivo e responsivo."
+            ],
+            'Criação de video VEO 3': [
+                "Primeiramente, entre na internet, estude sobre o veo 3 e crie um prompt em inglês para uma IA de texto para vídeo, com o seguinte conteúdo: \"{tema}\", faça com a narração em portugues BR."
             ]
         };
 
