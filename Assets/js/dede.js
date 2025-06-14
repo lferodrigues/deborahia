@@ -724,7 +724,7 @@ var prompts = {
                 "Crie um código de interface de usuário em \"{tema}\" que seja intuitivo e responsivo."
             ],
             'Criação de video VEO 3': [
-                "Primeiramente, entre na internet, estude sobre o veo 3 e crie um prompt em inglês para uma IA de texto para vídeo, com o seguinte conteúdo: \"{tema}\", faça com a narração em portugues BR."
+                "Primeiramente, entre na internet, estude sobre o veo 3 e crie um prompt todo em inglês para uma IA de texto para vídeo, com o seguinte conteúdo: \"{tema}\", faça com a narração em portugues BR."
             ]
         };
 
