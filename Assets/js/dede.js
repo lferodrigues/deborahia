@@ -326,6 +326,10 @@ var prompts = {
         "Descreva como usar storytelling para promover \"{tema}\". Inclua personagens, narrativa e emocionalidade vinculados ao tema.",
              
 ],
+            'Imagens Humanas profissionais utilizando o nano banana ou GPT': [" \"{tema}\" Não modificar características do rosto. Manter as mesmas características do rosto. Deixar a imagem com excelente resolução HD. Com nitidez microcontraste (tipo Phase One vibe), no formato para postagem no instagram",
+                                                                                         " \"{tema}\" Não modificar características do rosto. Manter as mesmas características do rosto. Deixar a imagem com excelente resolução HD. Com nitidez microcontraste (tipo Phase One vibe), no formato para storys",
+                                                                                           " \"{tema}\" Não modificar características do rosto. Manter as mesmas características do rosto. Deixar a imagem com excelente resolução HD. Com nitidez microcontraste (tipo Phase One vibe), no formato para banners"
+],                                                                      
      'Post para Instagram': [
             "Crie 10 conteúdos para post em Instagram, considerando regras de SEO e Click Bait, com títulos para cada pergunta mais pesquisada sobre\"{tema}\" no Google e o conteúdo cativante com pelo menos 500 caracteres em cada post", 
                 "Crie um post para Instagram sobre \"{tema}\" que inspire e motive os seguidores.",
@@ -805,4 +809,5 @@ var prompts = {
         }
 
 // Atualiza o ano no rodapé
+
 
