@@ -729,7 +729,7 @@ var prompts = {
             ],
             'Criação de video VEO 3': [
                 "Primeiramente, entre na internet, estude sobre o veo 3 e crie um prompt todo em inglês para uma IA de texto para vídeo, com o seguinte conteúdo: \"{tema}\", faça com a narração em portugues BR."
-            ]
+            ],
             'novelinha': [ "crie um personagem 3D antropomorfico desse objeto estilo Disney \"{tema}\"."
             ]
         };
